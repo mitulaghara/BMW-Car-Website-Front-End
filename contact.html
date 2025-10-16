@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | BMW M-Series</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-car"></i>
+                    <h1>BMW <span>M-Series</span></h1>
+                </div>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="models.html">Models</a>
+                    <a href="performance.html">Performance</a>
+                    <a href="technology.html">Technology</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with BMW M-Series experts for inquiries, test drives, and more</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="test-drive">Schedule Test Drive</option>
+                                <option value="pricing">Pricing Information</option>
+                                <option value="technical">Technical Questions</option>
+                                <option value="service">Service & Maintenance</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Subscribe to M-Series newsletter</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-full">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Visit Our Dealership</h3>
+                            <p>BMW M Experience Center<br>
+                               123 Performance Drive<br>
+                               Munich, Germany 80809</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>General Inquiries: +1 (800) 555-1234<br>
+                               Sales Department: +1 (800) 555-5678<br>
+                               Service Center: +1 (800) 555-9012</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>General: info@bmw-mseries.com<br>
+                               Sales: sales@bmw-mseries.com<br>
+                               Service: service@bmw-mseries.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 8:00 PM<br>
+                               Saturday: 10:00 AM - 6:00 PM<br>
+                               Sunday: 12:00 PM - 5:00 PM</p>
+                        </div>
+                    </div>
+
+                    <!-- Test Drive CTA -->
+                    <div class="test-drive-cta">
+                        <h3>Schedule a Test Drive</h3>
+                        <p>Experience the thrill of BMW M-Series firsthand. Book your test drive today.</p>
+                        <a href="#test-drive-form" class="btn btn-outline">Book Test Drive</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dealership Locations -->
+    <section class="dealerships-section">
+        <div class="container">
+            <h2 class="section-title">M Series Dealerships</h2>
+            <div class="dealerships-grid">
+                <div class="dealership-card">
+                    <div class="dealership-image">
+                        <img src="./images/bmw munich headquarters.png" alt="Munich Dealership">
+                    </div>
+                    <div class="dealership-info">
+                        <h3>Munich Headquarters</h3>
+                        <div class="dealership-address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Performance Drive, Munich, Germany</span>
+                        </div>
+                        <div class="dealership-phone">
+                            <i class="fas fa-phone"></i>
+                            <span>+49 89 123 4567</span>
+                        </div>
+                        <div class="dealership-hours">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 9AM-8PM, Sat: 10AM-6PM</span>
+                        </div>
+                        <a href="#" class="btn btn-small">Get Directions</a>
+                    </div>
+                </div>
+
+                <div class="dealership-card">
+                    <div class="dealership-image">
+                        <img src="./images/bmw New York Experience Center.png" alt="New York Dealership">
+                    </div>
+                    <div class="dealership-info">
+                        <h3>New York Experience Center</h3>
+                        <div class="dealership-address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>456 Luxury Avenue, New York, NY 10001</span>
+                        </div>
+                        <div class="dealership-phone">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (212) 555-7890</span>
+                        </div>
+                        <div class="dealership-hours">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 9AM-8PM, Sat: 10AM-6PM</span>
+                        </div>
+                        <a href="#" class="btn btn-small">Get Directions</a>
+                    </div>
+                </div>
+
+                <div class="dealership-card">
+                    <div class="dealership-image">
+                        <img src="./images/bmw Dubai Premium Center.png" alt="Dubai Dealership">
+                    </div>
+                    <div class="dealership-info">
+                        <h3>Dubai Premium Center</h3>
+                        <div class="dealership-address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>789 Sheikh Zayed Road, Dubai, UAE</span>
+                        </div>
+                        <div class="dealership-phone">
+                            <i class="fas fa-phone"></i>
+                            <span>+971 4 123 4567</span>
+                        </div>
+                        <div class="dealership-hours">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 9AM-8PM, Sat: 10AM-6PM</span>
+                        </div>
+                        <a href="#" class="btn btn-small">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I schedule a test drive?</h3>
+                    <p>You can schedule a test drive by calling our sales department, using the contact form above, or visiting any of our dealership locations. We recommend booking in advance for specific M models.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What is the warranty on M Series vehicles?</h3>
+                    <p>All BMW M Series vehicles come with a 4-year/50,000-mile warranty. Additional extended warranty options and maintenance packages are available.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you offer financing options?</h3>
+                    <p>Yes, we offer various financing options including lease programs, purchase financing, and BMW Select Balloon Financing. Our financial specialists can help you find the best option.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What maintenance services are included?</h3>
+                    <p>BMW M Series includes BMW Ultimate Care with scheduled maintenance for 3 years/36,000 miles. Additional service packages are available for extended coverage.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I customize my M Series vehicle?</h3>
+                    <p>Absolutely! We offer extensive customization options through BMW Individual, including exclusive paint colors, interior trims, and performance enhancements.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What is the delivery time for new orders?</h3>
+                    <p>Delivery times vary based on model and customization. Standard models typically deliver in 4-8 weeks, while highly customized vehicles may take 12-16 weeks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BMW M-Series</h3>
+                    <p>Experience the ultimate driving machine with BMW M-Series. Performance, luxury, and innovation combined.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="models.html">Models</a></li>
+                        <li><a href="performance.html">Performance</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> BMW Headquarters, Munich, Germany</li>
+                        <li><i class="fas fa-phone"></i> +1 (800) 555-1234</li>
+                        <li><i class="fas fa-envelope"></i> info@bmw-mseries.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 BMW M-Series. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

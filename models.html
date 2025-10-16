@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW M Models | M-Series</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-car"></i>
+                    <h1>BMW <span>M-Series</span></h1>
+                </div>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="models.html" class="active">Models</a>
+                    <a href="performance.html">Performance</a>
+                    <a href="technology.html">Technology</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>M Series Models</h1>
+            <p>Discover the complete range of BMW M high-performance vehicles</p>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section class="models-page">
+        <div class="container">
+            <!-- M5 Models -->
+            <div class="model-series" id="m5">
+                <h2 class="series-title">M5 Series</h2>
+                <div class="products" id="m5Products">
+                    <!-- M5 products will be loaded here -->
+                </div>
+            </div>
+
+            <!-- M4 Models -->
+            <div class="model-series" id="m4">
+                <h2 class="series-title">M4 Series</h2>
+                <div class="products" id="m4Products">
+                    <!-- M4 products will be loaded here -->
+                </div>
+            </div>
+
+            <!-- M3 Models -->
+            <div class="model-series" id="m3">
+                <h2 class="series-title">M3 Series</h2>
+                <div class="products" id="m3Products">
+                    <!-- M3 products will be loaded here -->
+                </div>
+            </div>
+
+            <!-- M8 Models -->
+            <div class="model-series" id="m8">
+                <h2 class="series-title">M8 Series</h2>
+                <div class="products" id="m8Products">
+                    <!-- M8 products will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h3 class="cart-title">Your Cart</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">$0</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BMW M-Series</h3>
+                    <p>Experience the ultimate driving machine with BMW M-Series. Performance, luxury, and innovation combined.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="models.html">Models</a></li>
+                        <li><a href="performance.html">Performance</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> BMW Headquarters, Munich, Germany</li>
+                        <li><i class="fas fa-phone"></i> +1 (800) 555-1234</li>
+                        <li><i class="fas fa-envelope"></i> info@bmw-mseries.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 BMW M-Series. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/models.js"></script>
+</body>
+</html>
